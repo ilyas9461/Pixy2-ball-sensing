@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:leonardo",
+    "sketch": "pixy2_renk_algilama.ino",
+    "port": "COM7"
+}
