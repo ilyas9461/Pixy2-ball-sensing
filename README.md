@@ -3,7 +3,7 @@
     <img src="./img/pixy2_3_result.jpg" width="40%" height="40%" border: 5px solid #555 >
 </p>
 
-## İçerik
+## Contents
 
 - [Overview](#Overview)
 - [How it works?](#How-it-works)
