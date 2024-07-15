@@ -1,4 +1,4 @@
-<h1 align="center">PIXY2 Top Renk Algılama </h1>
+<h1 align="center">PIXY2 Ball Colour Detect </h1>
 <p  align="center">
     <img src="./img/pixy2_3_result.jpg" width="40%" height="40%" border: 5px solid #555 >
 </p>
