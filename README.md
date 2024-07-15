@@ -62,5 +62,3 @@ Game duration, mode selection, etc. The settings indicate that the audio warning
 - GitHub [@your-ilyas9461](https://github.com/ilyas9461)
 - Linkedin [@your-linkedin](https://www.linkedin.com/in/ilyas-yağcioğlu-6a6b17217)
 
-### *** Note : 
-Since the circuit is in industrial production, electronic circuit diagrams are not shared.
