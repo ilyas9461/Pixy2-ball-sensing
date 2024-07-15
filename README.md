@@ -5,41 +5,40 @@
 
 ## İçerik
 
-- [Giriş](#Giriş)
-- [Çalışma Şekli](#Çalışma-Şekli)
-- [Kullanılan Teknolojiler](#Kullanılan-Teknolojiler)
-- [İletişim](#İletişim)
+- [Overview](#Overview)
+- [How it works?](#How-it-works)
+- [Used technologies](#Used-technologies)
 
-## Giriş
+## Overview
 
-Bu çalışmada, Pixy2 kameradan faydalanarak kırmızı, mavi, yeşil, beyaz, sarı, turuncu toplamda 6 renkten oluşan küçük topların renkleri kamera önünden fırlatıldığında bunların tanınması ve renklerinin sonsuz aynaya yansıtılarak sesli bir biçimde söylenmesi gerçekleştirilmiştir.
-Böylece küçük yaştaki çocukların (1-5 yaş) renkleri bir oyun senaryosu üzerinden öğrenmelerini kolaylaştırmak amaçlanmıştır.
+In this study, by using the Pixy2 camera, the colours of small balls consisting of 6 colours in total, red, blue, green, white, yellow and orange, are recognized when thrown in front of the camera and their colours are reflected aloud by reflecting them on an infinite mirror.
+Thus, it is aimed to make it easier for young children (1-5 years old) to learn colours through a game scenario.
 
 <p  align="center">
     <img src="./img/Oyun-Havuzu-Topu.jpg" width="30%" height="30%" border: 5px solid #555 >
 </p>
 
 
-## Çalışma Şekli
+## How it works?
 
-Sistemi Arduino UNO kontrol etmektedir. Pixy2 kameraya renkli toplar PC yazılımı üzerinden tanıtılmaktadır. Farklı çalışma modları ve bunlara uygun oyun senaryoları geliştirilmiştir. Tanınan topların renkleri sesli olarak ve sonsuz aynada rgb ledler ile gösterilmektedir. 
+Arduino UNO controls the system. Coloured balls are introduced to the Pixy2 camera via PC software. Different operating modes and appropriate game scenarios have been developed. The colours of the recognized balls are displayed audibly and with RGB LEDs on the infinite mirror.
 
 <p  align="center">
     <img src="./img/kisiye-ozel-ledli-ayna-500x500.jpg" width="30%" height="40%" border: 5px solid #555 >
 </p>
-Pixy kamera oyun alanı olarak belirlenen mekanik yapının üst tarafına(yukarıdan aşağıya bakacak şekilde) monte edilmiştir. Topun atıldığı yerin karşısında ise sonsuz ayna bulunmaktadır. Top atış yönü toplar kameranın önünden geçecek sekilde olmalıdır. Kameranın güneş ışığından etkilenmemesi için yan duvarların kapalı yada örtülü olması önerilir. 
+The Pixy camera is mounted on the tops of the registered mechanics (looking from top to bottom) as the playground. There is an infinite mirror opposite the place where the ball is thrown. How long should the top shooting direction be in front of the top camera? It is recommended that the side walls be closed or covered to prevent the camera from being affected by the sun.
 
-Örnek Senaryo :
+Example Scenario:
 
-Oyuncu alanın önünden geçereken mesafe sensörlerinden gelen bilgiye göre uygun mesafeye geldiğinde oyuncunun dikkatini çekecek random olarak bir ses verilir. Oyuncu yeterince yaklaştığında sistem bir top atmasını söyler. Sistem tarafından top rengi söylenir ve sonsuz aynada gösterilir. Böylece oyuna başlanmış olur. Önce atılan toplatın renkleri söylenirken sonrasında farklı renkteki topların atılması istenir ve oyuncuya her bildiği renk için puan verilir.
+When the player passes in front of the field and reaches the appropriate distance according to the information received from the distance sensors, a random sound is given to attract the player's attention. When the player gets close enough, the system tells him to throw a ball. The ball colour is told by the system and displayed on the infinite mirror. Thus the game begins. First, the colours of the ball thrown are told, then balls of different colours are asked to be thrown, and the player is given points for each colour he knows.
 
-Gösterilecek renk sayısı farklı donanım kullanılarak arttırılabilir. Burada RGB şerit ledler ile net olarak gösterilebilecek olan renkler tercih edilmiştir. Bu renklerin de ana renklerden olması ayrıca tercih sebebidir.
+The number of colours to be displayed can be increased by different hardware features. Here, colours that can be displayed with RGB strip LEDs are preferred. It is also preferred that these colours are primary colours.
 
 <p  align="center">
     <img src="./schematic-pcb/pcb_3d.png" width="70%" height="70%" border: 5px solid #555 >
 </p
 
- Oyun süresi,mod seçimi vb. ayarlar bir buton yardımı ile sesli uyarı yapılarak gerçekleştirilir.
+Game duration, mode selection, etc. The settings indicate that the audio warning continues with the help of a button.
 
 
 <br>
@@ -48,21 +47,20 @@ Gösterilecek renk sayısı farklı donanım kullanılarak arttırılabilir. Bur
 
 </p>
 
-## Kullanılan Teknolojiler
+## Used technologies
 
 ```bash
 - ARDUINO UNO.
 - C++.
-- PIXY2 renk algılama.
-- RGB şerit led sürme.
-- PCB devre şeması çizme ve oluşturma.
+- PIXY2 detect colour.
+- RGB strip led drivers.
+- KiCad PCB design.
 
 ```
 
-## İletişim
 
 - GitHub [@your-ilyas9461](https://github.com/ilyas9461)
 - Linkedin [@your-linkedin](https://www.linkedin.com/in/ilyas-yağcioğlu-6a6b17217)
 
-### *** Not : 
-Devre endüstriyel olarak üretimde olduğu için PCB devre şemaları paylaşılmamıştır.
+### *** Note : 
+Since the circuit is in industrial production, electronic circuit diagrams are not shared.
